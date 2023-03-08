@@ -100,24 +100,6 @@ In order to give commands to the console, these will need to be piped through an
 
 In Interactive Mode the commands will need to be written with a keyboard when the prompt appears and will be recognized when an enter key is pressed (new line). As soon as this happens, the console will attempt to execute the command through several means or will show an error message if the command didn't run successfully. In this mode, the console can be exited using the CTRL + D combination, CTRL + C, or the command quit or EOF.
 
-## Arguments
-Most commands have several options or arguments that can be used when executing the program. In order for the Shell to recognize those parameters, the user must separate everything with spaces.
-
-Example:
-
-
-user@ubuntu:~/AirBnB$ ./console.py
-(hbnb) create BaseModel
-32dbgy1e-5689-854r-65th-632588k98614v
-user@ubuntu:~/AirBnB$ ./console.py
-
-or
-
-user@ubuntu:~/AirBnB$ ./console.py $ echo "create BaseModel" | ./console.py
-(hbnb)
-32dbgy1e-5689-854r-65th-632588k98614v
-(hbnb)
-user@ubuntu:~/AirBnB$ ./console.py
 ## Available commands and what they do
 The recognizable commands by the interpreter are the following:
 
@@ -137,8 +119,8 @@ The recognizable commands by the interpreter are the following:
 |-----	|-----|
 |destroy	| Deletes an instance based on the class name and id (saves the change into a JSON file).|
 |Usage	|destroy <class name> <id> --or-- .destroy()|
------	-----
-|all	|Prints all string representation of all instances based or not on the class name.|
+| -----	|-----|
+| all	|Prints all string representation of all instances based or not on the class name.|
 |Usage	|By itself or all <class name> --or-- <class name>.all()|
 |-----	|-----|
 |update	|Updates an instance based on the class name and id by adding or updating attribute (saves the changes into a JSON file).|
