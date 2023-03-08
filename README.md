@@ -17,6 +17,7 @@ Some of the commands available are:
  * update
  * destroy
  * count
+
 And as part of the implementation of the command line interpreter coupled with the backend and file storage system, the folowing actions can be performed:
 
  * Creating new objects (ex: a new User or a new Place)
@@ -130,5 +131,5 @@ The recognizable commands by the interpreter are the following:
 |Usage	|<class name>.count()|
 
 ## Authors
-Solomon Gebreegziabher
-Haimanot Eshete
+* Solomon Gebreegziabher
+* Haimanot Eshete
