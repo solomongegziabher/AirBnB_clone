@@ -18,14 +18,14 @@ class FileStorage():
         return self.__objects
 
     def new(self, obj):
-        '''Function that sets in __objects the obj with key <obj class name>.id'''
+        '''It sets in __objects the obj with key <obj class name>.id'''
         objname = obj.__class__.__name__
         objID = obj.id
         key = f"{objname}.{objID}"  # <class name>.id = obj
         self.__objects[key] = obj
 
     def save(self):
-        '''Function that serializes __objects to the JSON file (path: __file_path)'''
+        '''It serializes __objects to the JSON file (path: __file_path)'''
         # serialize the object by first converting it to a dictionary.
         object_dict = {}
 
@@ -39,7 +39,7 @@ class FileStorage():
             jsonfile.write(json.dumps(object_dict))
 
     def classes(self):
-        """Function that returns a dictionary of valid classes and their references."""
+        """It returns a dictionary of valid classes and their references."""
         from models.base_model import BaseModel
         from models.user import User
         from models.state import State
@@ -73,7 +73,7 @@ class FileStorage():
             FileStorage.__objects = final_dict
 
     def attributes(self):
-        """Function that returns the valid attributes and their types for classname."""
+        """It returns the valid attributes and their types for classname."""
         attributes = {
             "BaseModel":
                      {"id": str,
